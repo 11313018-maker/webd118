@@ -29,26 +29,73 @@
 	height: 50px;
 	width: 1280px;
 }
+.tittle {
+	font-size: 36px;
+	background-color: #FF6;
+	text-align: center;
+}
 </style>
 <link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="SpryAssets/SpryTabbedPanels.css" rel="stylesheet" type="text/css" />
 <script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryTabbedPanels.js" type="text/javascript"></script>
 </head>
 
 <body>
 <div id="container">
   <div id="header"><img src="images/t05.jpg" width="1280" height="150" /></div>
-  <div id="article"> id "article" 的內容放在這裡</div>
+  <div id="article">
+    <div id="TabbedPanels1" class="TabbedPanels">
+      <ul class="TabbedPanelsTabGroup">
+        <li class="TabbedPanelsTab" tabindex="0">基本資料</li>
+        <li class="TabbedPanelsTab" tabindex="0">設計理念</li>
+        <li class="TabbedPanelsTab" tabindex="0">學習反思<br />
+        </li>
+      </ul>
+      <div class="TabbedPanelsContentGroup">
+        <div class="TabbedPanelsContent">
+          <table width="477" height="178" border="0">
+            <tr>
+              <td width="300 rowpan="4"><img src="images/me.png" width="300" height="450" /></td
+              ><td width="425" align="center" bgcolor="#66CCFF" class="VTabbedPanels"><span alss="rexttittle">個人資料</span></td>
+              
+            </tr>
+            <tr>
+             
+              <td><p>姓名:黃柏宥</p>
+              <p>性別:男</p>
+              <p>電話0924114XXX</p>
+              <p>就讀學校:嘉義華南高商</p>
+              <p>科別:電子商務</p>
+              <p>E-mail:11313018@gm.hnvs.cy.edu.tw</p></td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td class="tittle">經歷</td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+        <div class="TabbedPanelsContent">內容 3</div>
+        <div class="TabbedPanelsContent">內容 2</div>
+      </div>
+    </div>
+  </div>
   <div id="item"><ul id="MenuBar1" class="MenuBarVertical">
 <li><a href="main.html">嘉義觀光趣</a></li>
       <li><a href="new.html">義食之選</a>      </li>
-      <li><a href="new02.html">嘉靖未來</a></li>
+      <li><a href="new02.html">嘉境未來</a></li>
       <li><a href="new03.html">關於我</a></li>
       <li><a href="new04.html">與我聯絡</a></li>
       <li><a href="index.html">首頁</a></li>
-    </ul></div>
+  </ul></div>
   <div id="footer"><img src="images/t01.jpg" width="1280" height="50" /></div>
 </div><script type="text/javascript">
 var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+var TabbedPanels1 = new Spry.Widget.TabbedPanels("TabbedPanels1");
 </script>
 </body>
 </html>
